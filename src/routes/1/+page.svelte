@@ -1,4 +1,5 @@
 <script lang="ts">
+	import SceneInspector from '$lib/components/controls/SceneInspector.svelte';
 	import { onMount } from 'svelte';
 	import * as THREE from 'three';
 
@@ -32,11 +33,7 @@
 	});
 </script>
 
-<div bind:this={container} class="three-root"></div>
-
-<style>
-	.three-root {
-		width: 100%;
-		height: 100vh;
-	}
-</style>
+<div class="relative h-screen w-full">
+	<div bind:this={container} class="h-screen w-full"></div>
+	<SceneInspector {scene} />
+</div>
