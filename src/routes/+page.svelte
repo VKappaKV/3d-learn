@@ -15,4 +15,5 @@
 			>Progress</a
 		>
 	</p>
+	<p>New day new stuff to learn <a href="/2" class="text-blue-600 underline">Day 2</a></p>
 </div>
